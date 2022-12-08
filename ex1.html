@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic type lang</title>
+</head>
+<body>
+    <script>
+        let x = 10;
+        console.log('Before function call',typeof(x))  //number
+
+        test()
+        function test(){
+            x = "JavaScript"
+            console.log('inside function call',typeof(x))  //string
+        }
+        console.log('after function call',typeof(x))  //string
+
+        x=true
+        console.log('outside function call',typeof(x)) //boolean
+
+
+
+    </script>
+</body>
+</html>
